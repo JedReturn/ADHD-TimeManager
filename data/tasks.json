@@ -1,15 +1,22 @@
 [
   {
-    "name": "APP",
-    "task_type": "brain",
-    "priority": 2,
-    "est": 120,
+    "name": "Exercise",
+    "task_type": "misc",
+    "priority": 1,
+    "est": 15,
     "complete": false
   },
   {
-    "name": "Journal",
-    "task_type": "misc",
-    "priority": 2,
+    "name": "Tidy",
+    "task_type": "chores",
+    "priority": 1,
+    "est": 10,
+    "complete": false
+  },
+  {
+    "name": "Litterbox",
+    "task_type": "chores",
+    "priority": 1,
     "est": 10,
     "complete": false
   },
@@ -21,59 +28,24 @@
     "complete": false
   },
   {
+    "name": "APP",
+    "task_type": "brain",
+    "priority": 1,
+    "est": 120,
+    "complete": false
+  },
+  {
     "name": "check messages",
     "task_type": "misc",
-    "priority": 2,
-    "est": 15,
-    "complete": false
-  },
-  {
-    "name": "Plan Rhuem",
-    "task_type": "brain",
-    "priority": 2,
-    "est": 10,
-    "complete": false
-  },
-  {
-    "name": "Copy Journal to tasks",
-    "task_type": "misc",
-    "priority": 2,
-    "est": 10,
-    "complete": true
-  },
-  {
-    "name": "Weekly Review",
-    "task_type": "misc",
-    "priority": 1,
-    "est": 20,
-    "complete": true
-  },
-  {
-    "name": "Tidy",
-    "task_type": "chores",
-    "priority": 2,
-    "est": 10,
-    "complete": false
-  },
-  {
-    "name": "Make Lunch",
-    "task_type": "chores",
     "priority": 1,
     "est": 15,
-    "complete": true
+    "complete": false
   },
   {
-    "name": "Make Doc for jules",
+    "name": "Daily Plan",
     "task_type": "brain",
     "priority": 1,
-    "est": 20,
-    "complete": true
-  },
-  {
-    "name": "Github App",
-    "task_type": "brain",
-    "priority": 2,
-    "est": 20,
+    "est": 10,
     "complete": true
   }
 ]

@@ -1,19 +1,30 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict
 from typing import Optional
 
-@dataclass
-class Task:
+
+@dataclass(frozen=True)
+class TaskType:
     name: str
-    type: str
+    color: str = "#cccccc"
+
+@dataclass
+class BaseTask:
+    name: str
+    task_type: TaskType
     priority: int = 3
+
+    def to_dict(self):
+        d = asdict(self)
+        d['task_type'] = self.task_type['name']  # Convert TaskType to string
+        return d
+@dataclass
+class Task(BaseTask):
     est: int = 30
     complete: bool = False
     chain: Optional[str] = None
 
 @dataclass
-class SavedTask:
-    name: str
-    type: str
-    default_est: int
-    default_priority: int = 3
+class SavedTask(BaseTask):
+    default_est: int = 30
     note: Optional[str] = None
+

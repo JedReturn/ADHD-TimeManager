@@ -28,13 +28,6 @@
     "complete": false
   },
   {
-    "name": "Message Katie",
-    "task_type": "misc",
-    "priority": 3,
-    "est": 10,
-    "complete": false
-  },
-  {
     "name": "Thank you cards",
     "task_type": "chores",
     "priority": 3,
@@ -46,13 +39,6 @@
     "task_type": "brain",
     "priority": 2,
     "est": 60,
-    "complete": false
-  },
-  {
-    "name": "Cuddle Julia afternoon",
-    "task_type": "misc",
-    "priority": 2,
-    "est": 30,
     "complete": false
   },
   {
@@ -145,13 +131,6 @@
     "priority": 1,
     "est": 25,
     "complete": false
-  },
-  {
-    "name": "Cuddle Julia afternoon",
-    "task_type": "misc",
-    "priority": 1,
-    "est": 30,
-    "complete": true
   },
   {
     "name": "check messages",

@@ -9,6 +9,10 @@ global current_list
 global current_filter
 current_list = 'tasks'
 path = os.getcwd().replace('\\','/')
+
+def get_path():
+    return path
+
 def main():
     with open(path +'/data/tasks.json', 'r') as f:
         tasks = json.load(f)
