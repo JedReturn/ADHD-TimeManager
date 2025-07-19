@@ -36,7 +36,7 @@ task_listbox = tk.Listbox(top_center_frame, width=50)
 
 #Update
 def update_list(box=task_listbox):
-    ls = main.filter_list()
+    ls = controller.filter_list()
     box.delete(0, tk.END)
     for i in ls:    
         box.insert(tk.END, f"{i['name']}: {i['task_type']} {i['priority']} {i['est']}")
@@ -144,16 +144,12 @@ def open_add_task_popup():
 #Misc/////////////////////////////////////////////
 def get_selected_task(box=task_listbox):
     i = box.curselection()
-    if i:
-        string = box.get(i[0])
-        return string.split(':')[0]
+    return i
 
 #Comands
 def complete_selected():
-    current_list, current_filter = main.get_globals()
-    name = get_selected_task()
-    index = main.get_index(name, current_list)
-    main.complete_task(index, current_list)
+    index = get_selected_task()
+    controller.complete_selected(index[0])
     update_all()
 
 def remove_selected():

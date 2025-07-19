@@ -11,14 +11,14 @@
     "task_type": "chores",
     "priority": 1,
     "est": 10,
-    "complete": false
+    "complete": true
   },
   {
     "name": "Litterbox",
     "task_type": "chores",
     "priority": 1,
     "est": 10,
-    "complete": false
+    "complete": true
   },
   {
     "name": "Shower",
@@ -32,7 +32,7 @@
     "task_type": "brain",
     "priority": 1,
     "est": 120,
-    "complete": false
+    "complete": true
   },
   {
     "name": "check messages",

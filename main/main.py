@@ -40,8 +40,8 @@ def get_index(name, list):
         if task['name'] == name:
             return tasks.index(task)
 
-def complete_task(index, list):
-    tasks = get_tasks(list)
+def complete_task(index):
+    tasks = get_tasks(current_list)
     tasks[index]['complete'] = not tasks[index]['complete']
 
 def remove_task(index, list):

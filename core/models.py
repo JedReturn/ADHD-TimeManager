@@ -15,7 +15,7 @@ class BaseTask:
 
     def to_dict(self):
         d = asdict(self)
-        d['task_type'] = self.task_type['name']  # Convert TaskType to string
+        d['task_type'] = self.task_type.name  # Convert TaskType to string
         return d
 @dataclass
 class Task(BaseTask):
